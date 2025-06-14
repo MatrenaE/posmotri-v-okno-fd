@@ -40,6 +40,7 @@ ol {
 }
 
 .content {
+  margin: auto;
   display: grid;
   grid-template-columns: auto 399px;
   align-items: end;
@@ -48,7 +49,7 @@ ol {
 }
 
 .result {
-  height: 456px;
+  height: auto;
 }
 
 .result__video-container {
@@ -103,7 +104,7 @@ ol {
   margin-top: 5px;
 }
 
-.search-form__label:hover {
+.search-form__checkbox-list .search-form__label:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -116,7 +117,6 @@ ol {
   outline: 1px solid #fff;
   outline-offset: 1px;
 }
-
 
 .search-form__textfield {
   width: 225px;
@@ -171,8 +171,8 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 
 .button {
   background-color: transparent;
-  border: 1px solid #fff;
-  font-family: 'Fira Sans Condensed';
+  border: 1px solid currentColor;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -225,7 +225,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 }
 
 .custom-scrollbar {
-  overflow-y: hidden;
   overflow-y: scroll;
 }
 
@@ -248,7 +247,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 }
 
 .content__card-link_current {
-  display: block;
   background-color: rgba(84, 80, 80, 1);
 }
 
@@ -257,7 +255,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 }
 
 .content__card-link:active {
-   display: block;
    background-color: rgba(84, 80, 80, 1);
 }
 
@@ -280,7 +277,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 }
 
 .content__video-card-title {
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -289,10 +286,11 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  line-height: 100%;
 }
 
 .content__video-card-description {
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
